@@ -1,17 +1,17 @@
-import logo from "./logo.svg";
-// import "./App.css";
-import Header from "./Header.js";
-import Greeting from "./Greeting.js";
-import MultiPropComponent from "./MultiPropComponent";
+import Header from "./Header.js"
+import Greeting from "./Greeting.js"
+import LotsOfProps from "./LotsOfProps.js";
+
 function App() {
+  // logic
+let myarray = [1, 2, 3, 4]
+  
   return (
     <div className="App">
       <Header />
-      {Header()}
-      <Greeting name="Nick" />
-      {Greeting({ name: "Archer" })}
-      <MultiPropComponent food="Ice Cream" color="Green" number={24} />
-      {MultiPropComponent({ food: "Wings", color: "Purple", number: 2 })}
+      <h2>Hey all you cool cats and kittens</h2>
+      <Greeting name="Bob"/>
+      <LotsOfProps pizzaTopping="pineapple" icecream="chocolate" scoops={3} array={myarray} />
     </div>
   );
 }
