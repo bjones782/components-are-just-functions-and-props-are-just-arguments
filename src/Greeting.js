@@ -1,5 +1,11 @@
-function Greeting({ name }) {
-  return <h3>Greetings, {name}!</h3>;
+function Greeting({name}) {
+// logic
+
+return(
+    <div>
+        <h3>Hey, {name}!</h3>
+    </div>
+)
 }
 
-export default Greeting;
+export default Greeting
